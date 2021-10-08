@@ -1,6 +1,6 @@
 
 
-public aspect TraceAspect {
+public aspect TraceAspectSchmeits {
 	   pointcut classToTrace(): within(ComponentApp) || within(DataApp) || within(ServiceApp);
 
 	   pointcut methodToTrace():  classToTrace() &&  execution(String getName());
